@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: -webkit-gradient(linear, left top, left bottom, from(hsl(273, 75%, 66%)), to(hsl(240, 73%, 65%))) fixed;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 80%;
+    margin: 120px auto;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 43px -8px rgba(0,0,0,0.72);
+    width: 375px;
+}
+
+.background {
+    background: url("images/bg-pattern-mobile.svg") no-repeat top;
+    background-size: contain;
+    min-height: 104px;
+    position: relative;
+}
+
+.faq {
+    position: relative;
+}
+
+.woman {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -233px;
+}
+
+.woman img {
+    width: 240px;
+}
+
+.faq h1 {
+    color:  hsl(238, 29%, 16%);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    margin-bottom: 50px;
+}
+
+.qa {
+    border-bottom: 1px hsl(240, 5%, 91%) solid;
+}
+
+.qa a, p {
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.qa a {
+    color:  hsl(237, 12%, 33%);
+    margin-top: 12px;
+}
+
+.qa p {
+    color: hsl(240, 6%, 50%);
+}
+
+.x {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.x button {
+    display: flex;
+    background-color: transparent;
+    border: 0;
+    align-self: center;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.anser {
+    max-width: 90%;
+}
+
+.answer {
+    max-width: 90%;
+    display: none;
+    position: relative;
+}

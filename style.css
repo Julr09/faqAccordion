@@ -16,7 +16,7 @@ img {
 
 .container {
     width: 80%;
-    margin: 120px auto;
+    margin: 70px auto 0 auto;
     display: flex;
     justify-content: center;
     min-height: 100vh;
@@ -100,12 +100,10 @@ img {
     margin-top: 12px;
 }
 
-.anser {
-    max-width: 90%;
-}
+
 
 .answer {
-    max-width: 90%;
     display: none;
+    max-width: 90%;
     position: relative;
 }

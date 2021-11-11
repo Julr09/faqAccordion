@@ -78,11 +78,12 @@ img {
 
 .qa a {
     color:  hsl(237, 12%, 33%);
-    margin-top: 12px;
+    margin: 12px 0;
 }
 
 .qa p {
     color: hsl(240, 6%, 50%);
+    margin-top: 0;
 }
 
 .x {

@@ -16,7 +16,7 @@ img {
 
 .container {
     width: 80%;
-    margin: 70px auto 0 auto;
+    margin:  0 auto;
     display: flex;
     justify-content: center;
     min-height: 100vh;
@@ -101,7 +101,21 @@ img {
 }
 
 .answer {
-    display: none;
-    max-width: 90%;
-    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+
+.qa.active .answer{
+    height: 3em;
+}
+
+.qa.active .x a {
+    color: hsl(238, 29%, 16%);
+    font-weight: 700;
+}
+
+.x .q:active, .q:hover {
+    color: hsl(14, 88%, 65%);
+    font-weight: 700;
 }

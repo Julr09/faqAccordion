@@ -16,7 +16,7 @@ img {
 
 .container {
     width: 80%;
-    margin:  0 auto;
+    margin: 10% auto 0;
     display: flex;
     justify-content: center;
     min-height: 100vh;
@@ -26,14 +26,14 @@ img {
 .card {
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0 10px 43px -8px rgba(0,0,0,0.72);
-    width: 375px;
+    box-shadow: 0 10px 43px -8px rgba(0, 0, 0, 0.72);
+    width: 23.4375em;
 }
 
 .background {
     background: url("images/bg-pattern-mobile.svg") no-repeat top;
     background-size: contain;
-    min-height: 104px;
+    min-height: 6.5em;
     position: relative;
 }
 
@@ -47,15 +47,21 @@ img {
     position: absolute;
     left: 0;
     right: 0;
-    top: -233px;
+    top: -14.5625em;
 }
 
+.background img {
+    position: absolute;
+    display: none;
+}
+
+
 .woman img {
-    width: 240px;
+    width: 15em;
 }
 
 .faq h1 {
-    color:  hsl(238, 29%, 16%);
+    color: hsl(238, 29%, 16%);
     margin-bottom: 10px;
     text-align: center;
 }
@@ -63,8 +69,8 @@ img {
 .questions {
     display: flex;
     flex-direction: column;
-    padding: 0 30px;
-    margin-bottom: 50px;
+    padding: 0 1.875em;
+    margin-bottom: 3.125em;
 }
 
 .qa {
@@ -72,13 +78,13 @@ img {
 }
 
 .qa a, p {
-    font-size: 12px;
+    font-size: 0.75rem;
     text-decoration: none;
 }
 
 .qa a {
-    color:  hsl(237, 12%, 33%);
-    margin: 12px 0;
+    color: hsl(237, 12%, 33%);
+    margin: 0.75em 0;
 }
 
 .qa p {
@@ -106,8 +112,14 @@ img {
     transition: all .5s ease;
 }
 
-.qa.active .answer{
+.qa.active .answer {
     height: 3em;
+    max-width: 95%;
+}
+
+.qa.active .more {
+    height: 4em;
+    max-width: 95%;
 }
 
 .qa.active .x a {
@@ -118,4 +130,77 @@ img {
 .x .q:active, .q:hover {
     color: hsl(14, 88%, 65%);
     font-weight: 700;
+}
+
+@media (max-width: 352px) {
+    .qa.active .answer {
+        height: 4.5em;
+    }
+
+    .answer p {
+        font-size: 0.6875rem;
+    }
+}
+
+@media (min-width: 490px) {
+    .card h1 {
+        font-size: 2.1875rem;
+    }
+
+    .x a {
+        font-size: 0.875rem;
+    }
+
+    .answer p {
+        font-size: 0.875rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        margin: 0 auto;
+    }
+
+    .card {
+        display: flex;
+        min-width: 53.4375em;
+    }
+
+    .card h1 {
+        font-size: 1.5625rem;
+        text-align: left;
+        padding: 0 3.125rem;
+        margin: 2.8125rem 0 1.25rem;
+    }
+
+    .background {
+        width: 100%;
+        background: url("images/bg-pattern-desktop.svg") no-repeat 103% 68%,
+        url("images/illustration-woman-online-desktop.svg") no-repeat 125% 42%;
+    }
+
+    .questions {
+        margin-bottom: 5rem;
+        padding-right: 5.625rem;
+        padding-left: 3.125rem;
+    }
+
+    .qa a {
+        margin: 1.25rem 0;
+    }
+
+    .x a {
+        font-size: 0.875rem;
+    }
+
+    .woman {
+        display: none;
+    }
+
+    .background img {
+        display: flex;
+        left: -23%;
+        right: 0;
+        top: 39%;
+    }
 }
